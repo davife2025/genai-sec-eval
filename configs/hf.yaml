@@ -1,0 +1,24 @@
+# Real run through Hugging Face Inference Providers. Needs HF_TOKEN in your environment.
+# Pick any chat model that is served by an inference provider:
+#   https://huggingface.co/models?inference_provider=all&pipeline_tag=text-generation
+# Gated models (e.g. Llama) need you to accept the license on the model page first.
+run_name: hf-run
+output_dir: results
+system_prompt: configs/system_prompt.txt
+
+target:
+  type: hf
+  model: Qwen/Qwen2.5-7B-Instruct   # change me; override with --model
+  provider: auto                      # pin a provider (e.g. "hf-inference") for reproducibility
+  temperature: 0.7
+  max_tokens: 300
+
+dataset:
+  path: data/dev.jsonl
+  split: dev
+  limit: null
+
+runner:
+  concurrency: 4        # keep low on free tiers to avoid rate limits
+  max_retries: 3
+  repeats: 3            # sample each prompt 3 times: temperature makes single runs noisy

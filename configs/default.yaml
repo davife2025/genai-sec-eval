@@ -1,0 +1,18 @@
+# Default config: runs fully offline with a mock model (no token needed).
+run_name: mock-baseline
+output_dir: results
+system_prompt: configs/system_prompt.txt
+
+target:
+  type: mock            # mock | hf | langchain
+  mode: partial         # mock only: safe | partial | leaky
+
+dataset:
+  path: data/dev.jsonl
+  split: dev
+  limit: null
+
+runner:
+  concurrency: 4
+  max_retries: 3
+  repeats: 1

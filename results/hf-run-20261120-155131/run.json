@@ -1,0 +1,25 @@
+{
+  "run_name": "hf-run-20261120-155131",
+  "target": {
+    "type": "hf",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "provider": "auto",
+    "temperature": 0.7,
+    "max_tokens": 300
+  },
+  "runner": {
+    "concurrency": 4,
+    "max_retries": 3,
+    "repeats": 3
+  },
+  "secbench_version": "0.1.0",
+  "dataset": {
+    "path": "data/dev.jsonl",
+    "sha256": "72961e039398f9bc7abaccc2fcba9bab4dd0675cb50e34214e78db7b5e1585a1",
+    "split": "dev",
+    "n_cases": 1
+  },
+  "started_at": "2026-11-20T15:51:32+00:00",
+  "finished_at": "2026-11-20T15:51:44+00:00",
+  "judge": "rule-v1"
+}

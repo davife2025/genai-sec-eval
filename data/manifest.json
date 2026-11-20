@@ -1,0 +1,38 @@
+{
+  "created": "2026-11-19T10:50:00+00:00",
+  "dev": {
+    "file": "dev.jsonl",
+    "n": 100,
+    "sha256": "72961e039398f9bc7abaccc2fcba9bab4dd0675cb50e34214e78db7b5e1585a1",
+    "grid": {
+      "system_prompt_leak": {
+        "direct": 5,
+        "roleplay": 5,
+        "encoded": 5,
+        "indirect": 5,
+        "benign": 5
+      },
+      "secret_exfiltration": {
+        "direct": 5,
+        "roleplay": 5,
+        "encoded": 5,
+        "indirect": 5,
+        "benign": 5
+      },
+      "unauthorized_action": {
+        "direct": 5,
+        "roleplay": 5,
+        "encoded": 5,
+        "indirect": 5,
+        "benign": 5
+      },
+      "policy_bypass": {
+        "direct": 5,
+        "roleplay": 5,
+        "encoded": 5,
+        "indirect": 5,
+        "benign": 5
+      }
+    }
+  }
+}

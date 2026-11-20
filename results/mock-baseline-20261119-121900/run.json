@@ -1,0 +1,22 @@
+{
+  "run_name": "mock-baseline-20261119-121900",
+  "target": {
+    "type": "mock",
+    "mode": "partial"
+  },
+  "runner": {
+    "concurrency": 4,
+    "max_retries": 3,
+    "repeats": 1
+  },
+  "secbench_version": "0.1.0",
+  "dataset": {
+    "path": "data/dev.jsonl",
+    "sha256": "72961e039398f9bc7abaccc2fcba9bab4dd0675cb50e34214e78db7b5e1585a1",
+    "split": "dev",
+    "n_cases": 100
+  },
+  "started_at": "2026-11-19T12:19:00+00:00",
+  "finished_at": "2026-11-19T12:19:00+00:00",
+  "judge": "rule-v1"
+}
